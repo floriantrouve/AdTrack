@@ -1,0 +1,7 @@
+parameters:
+#    volvo_front.example.class: Volvo\FrontBundle\Example
+
+services:
+#    volvo_front.example:
+#        class: %volvo_front.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,42 @@
+{% extends 'VolvoFrontBundle:Default:index.html.twig' %}
+
+{% block content -%}
+    <h1 class="page-header">Fournisseurs</h1>
+
+	<div class="row well">
+		{{ form_start(form, {'attr': {'role':'form', 'class': 'col-lg-4'}}) }}
+		{{ form_errors(form) }}
+		<div class="form-group">
+		  {{ form_label(form.name, "Nom") }}
+		
+		  {{ form_errors(form.name) }}
+		  {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+		</div>
+		{{ form_widget(form.submit, {'attr': {'class': 'btn btn-primary'}, 'label': 'Ajouter'}) }}
+		{{ form_rest(form) }}
+		{{ form_end(form) }}
+	</div>
+	
+	<table class="records_list table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nom</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.id }}</td>
+                <td>{{ entity.name }}</td>
+                <td>
+                <form action="{{ path('supplier_delete', {'id': entity.id}) }}" method="POST">
+                	<button type="submit" class="btn btn-danger btn-sm">Supprimer</button>
+                </form>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endblock %}

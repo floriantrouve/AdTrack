@@ -1,0 +1,37 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<div id="wrapper" style="margin-top:50px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+					<div class="well">
+						<form id="loginForm" method="POST" action="{{ path('login_check') }}" novalidate="novalidate">
+							  {# S'il y a une erreur, on l'affiche dans un joli cadre #}
+							  {% if error %}
+							    <div class="alert alert-danger">{{ error.message|trans }}</div>
+							  {% endif %}
+							<div class="form-group">
+								<label for="username" class="control-label">Identifiant</label>
+								<input type="text" class="form-control" id="username" name="_username" value="" required="" title="Veuillez saisir un identifiant" placeholder="example@volvoit.com" value="{{ last_username }}">
+								<span class="help-block"></span>
+							</div>
+							<div class="form-group">
+								<label for="password" class="control-label">Mot de passe</label>
+								<input type="password" class="form-control" id="password" name="_password" value="" required="" title="Veuillez saisir un mot de passe">
+								<span class="help-block"></span>
+							</div>
+							<div id="loginErrorMsg" class="alert alert-error hide">Mauvais identifiant / mot de passe</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="_remember_me" id="remember"> Rester connecté
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Connexion</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+{% endblock %}

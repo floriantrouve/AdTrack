@@ -1,0 +1,468 @@
+﻿body
+{
+	margin: 0;
+	padding: 0 ;
+	background: url(../img/fond_site.jpg);
+}
+a {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+	font-weight: bold ;
+}
+
+a:hover {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #c1b374;
+  /*  text-decoration: underline; */
+	font-weight: bold ;
+}
+
+a.one {font-size: 9px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #c1b374;}
+a.one:hover {font-size: 9px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #fff;}
+
+.textdate {
+	float:right;
+    font-size: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.textblanc {
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+  /*  font-weight: bold;*/
+}
+.textblancgras {
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+  	font-weight: bold;
+}
+.txtdescription {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #FFFFFF;
+  /*  background-color: #3a361a; */
+}
+.txtdescription2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+	background-color: #262310;
+}
+
+.txtbase {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #332c11;
+}
+.txttitre {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #262310;
+	font-weight:bold;
+}
+.txtparagraphe {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #262310;
+}
+.txtbulle {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+ /*   white-space: pre; */
+    font-size: 12px;
+    color: #262310;
+}
+.txtbulletitre {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #262310;
+	font-weight: bold;
+}
+h2 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: #262310;
+}
+
+/* --------------------------- les 3 div du site -------------------------*/
+/*  header */
+#header {
+	width: 950px;
+    height: 173px;	
+	margin:0px auto;
+}
+#header_cache {
+	width: 950px;
+    height: 173px;
+	position: fixed;	
+	margin:0px auto;
+}
+#header_flash {
+	width: 950px;
+    height: 173px;
+
+	margin:0px auto;
+}
+/* --------*/
+#container { 
+	width: 950px;
+    height: 450px;
+	padding: 0;  
+	margin:0px auto;	
+	}
+div.footer {
+	width: 950px;
+    height: 30px;
+	background: #262310 ;
+	font-size: 9px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #c1b374;
+	margin:0px auto;
+	text-align: center;
+	}
+ /* ----------------------- div pour accueil --------------------------*/
+#accueil { 
+	background: url(../img/accueil_fond.jpg) no-repeat top left; 
+	width: 950px;
+    height: 450px;
+	padding: 0;  
+	margin: 0; 
+	}
+#paragraphe {
+	text-align: left;
+	position:relative;
+	top: 60px;
+	left: 240px;
+	width: 720px;
+}
+#hautdroite {
+    text-align: right;
+	padding-right: 10px;
+	float: right;
+}
+#accueil_conf {
+	background: url(../img/accueil_conf.gif) no-repeat top right;	
+	text-align: left;
+	width:498px;
+	height:138px;
+	float:right;
+	clear:right;
+	margin-top:73px;
+	padding-left:20px;
+	padding-right:5px;
+	padding-top:45px;
+}
+#accueil_img{
+	background: url(../img/accueil_img.jpg) no-repeat top left;
+	width:354px;
+	height:277px;
+	float:right;
+	clear:right;
+	margin-right:96px;
+	margin-top:-7px;
+}
+/* ----------------------- div acces ---------------------------*/
+#acces { 
+	background: url(../img/plan_fond.gif) no-repeat top left; 
+	width: 950px;
+    height: 450px;
+	padding: 0;  
+	margin: 0; 
+	}
+#plan {
+    position: relative;
+	top: 76px;
+	left: 28px;
+}
+/* -------------------- contact --------------------------*/
+#contact { 
+	background: url(../img/contact_fond.jpg) no-repeat top left; 
+	width: 950px;
+    height: 450px;
+
+	}
+#contact_texte {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:white;
+	font-weight:bold;
+	float: left;
+	position: relative;
+	margin-top: 100px;
+	margin-left: 200px;
+}
+/* -------------------- equipe --------------------------*/
+#equipe { 
+	background: url(../img/equipe_fond.gif) no-repeat top left; 
+	width: 950px;
+    height: 450px;
+	padding: 0;  
+	margin: 0; 
+	}
+#tabequipe {
+	overflow-y:auto;
+	overflow-x:hidden;
+	position: relative;
+	top: 82px;
+	left: 90px;
+	width:800px;
+	height:350px;
+}
+.equipenom {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #c1b374;
+	/*font-weight: bold ;*/
+}
+.txtblanc {
+	text-align: left;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    
+}
+/* -------------------- soins --------------------------*/
+#soins { 
+	background: url(../img/soins_fond.jpg) no-repeat top left; 
+	width: 950px;
+    height: 450px;
+	padding: 0;  
+	margin: 0; 
+	}
+#soins_texte {
+	width:450px;
+	float: left;
+	position: relative;
+	margin-top: 100px;
+	margin-left: 130px;
+}
+#soins_texte a:hover {
+	color:#786D48;
+}
+	/* --menu de soins -- */
+#menusoins {
+    margin-top: 77px;
+	padding-left: 10px;
+	float: left;
+}
+#soins_navi {
+	list-style: none ;
+	margin: 0;
+	padding: 0;
+}
+#soins_navi li {
+	margin-bottom: 12px ;
+}
+/* -------------------- activité --------------------------*/
+#activite { 
+	background: url(../img/activites_fond.jpg) no-repeat top left; 
+	width: 950px;
+    height: 450px;
+	padding: 0;  
+	margin: 0; 
+	}
+#act_contenu {
+	width:450px;
+	float: left;
+	position: relative;
+	margin-top: 100px;
+	margin-left: 90px;
+}
+	/* -- menu d'activités -- */
+#menu_act {
+    margin-top: 76px;
+    padding-left: 10px;
+	float: left;
+}
+#act_navi {
+	list-style: none ;
+	margin: 0;
+	padding: 0;
+}
+#act_navi li {
+	margin-bottom: 15px ;
+}
+/* ----------------------- div enseignements ---------------------------*/
+#enseignements { 
+	background: url(../img/enseignements_fond.jpg) no-repeat top left; 
+	width: 950px;
+    height: 450px;
+	padding: 0;  
+	margin: 0;
+	}
+#enseign_contenu {
+	position: relative;
+	top: 80px;
+	left: 300px;
+    width: 450px;
+    height: 370px;
+	overflow: auto;
+}
+
+#dates{
+	background: url(../img/enseign_dates.gif) no-repeat top right;
+	float: right;
+	width:190px;
+	height:299px;
+	margin-top: 119px;
+	padding: 10px;
+	
+}
+.description {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #262310;
+	margin-bottom: 2px;
+}
+a.info {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-decoration: underline;
+	font-weight: bold ;
+}
+
+a.info:hover {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold ;
+}
+.textdates {
+    font-size: 12px;
+	text-align:right;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+.datestitre{
+	font-size: 12px;
+	text-align:right;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #c1b374;
+	font-weight: bold;
+}
+
+/* -------------------- Agenda --------------------------*/
+#agenda { 
+	background: url(../img/agenda_fond.gif) no-repeat top left; 
+	width: 950px;
+    height: 450px;
+	padding: 0;  
+	margin: 0;
+	}
+#tabagenda {
+margin-left:40px;
+}
+#tableauagenda {
+margin-top:120px;
+overflow:hidden;
+margin-left:27px;
+float:left;
+background:#C1B374;
+font-family: Verdana;
+font-size: 12px;
+text-align:center;
+width:110px;
+}
+
+/* ----------------------- Conférences ---------------------------*/
+#conferences { 
+	background: url(../img/conferences_fond.jpg) no-repeat top left;
+	width: 950px;
+    height: 450px;
+	}
+#conf_contenu {
+	position: relative;
+	top: 80px;
+	left: 160px;
+    width: 530px;
+    height: 370px;
+	overflow: auto;
+}
+
+/* ----------------------- Evénements ---------------------------*/
+#evenements{ 
+	background: url(../img/evenements_fond.jpg) no-repeat top left;
+	width: 950px;
+    height: 450px;
+	}
+#evenements_contenu {
+	position: relative;
+	top: 80px;
+	left: 160px;
+    width: 530px;
+    height: 370px;
+	overflow: auto;
+}
+
+/* ----------------------- Livre d'or ---------------------------*/
+#livredor { 
+	background: url(../img/livredor_fond.jpg) no-repeat top left;
+	width: 950px;
+    height: 450px;
+	}
+#livredor_contenu {
+	position: relative;
+	top: 80px;
+	left: 160px;
+    width: 530px;
+    height: 370px;
+	overflow: auto;
+}
+#livredor_contenu a {
+	color : black;
+}
+
+/* ----------------------- Témoignages ---------------------------*/
+#temoignages { 
+	background: url(../img/temoignages_fond.jpg) no-repeat top left;
+	width: 950px;
+    height: 450px;
+	}
+#temoignages_contenu {
+	position: relative;
+	top: 80px;
+	left: 160px;
+    width: 530px;
+    height: 370px;
+	overflow: auto;
+}
+#temoignages_contenu a {
+	color : black;
+}
+
+/* Lightbox */
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(/../img/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(/../img/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }

@@ -1,0 +1,12 @@
+supplier:
+    path:     /supplier
+    defaults: { _controller: "VolvoAdminBundle:Supplier:index" }
+
+supplier_delete:
+    path:     /supplier/{id}/delete
+    defaults: { _controller: "VolvoAdminBundle:Supplier:delete" }
+    requirements: { _method: post|delete }
+
+request:
+    path:     /request
+    defaults: { _controller: "VolvoAdminBundle:Request:index" }

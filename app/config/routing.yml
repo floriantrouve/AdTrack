@@ -1,0 +1,12 @@
+volvo_admin:
+    resource: "@VolvoAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+volvo_front:
+    resource: "@VolvoFrontBundle/Resources/config/routing.yml"
+    prefix:   /
+
+volvo_security:
+    resource: "@VolvoSecurityBundle/Resources/config/routing.yml"
+    prefix:   /
+
